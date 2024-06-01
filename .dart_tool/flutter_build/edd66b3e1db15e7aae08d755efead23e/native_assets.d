@@ -1,1 +1,0 @@
- C:\\Users\\sohei\\OneDrive\\Bureau\\flutter-game\\galactic_defender\\.dart_tool\\flutter_build\\edd66b3e1db15e7aae08d755efead23e\\native_assets.yaml: 
