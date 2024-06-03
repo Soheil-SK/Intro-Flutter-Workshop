@@ -405,10 +405,10 @@ class GalacticDefenderGame extends FlameGame with TapCallbacks {
 # Aller plus loins
 - Bande sonore
 - sound effects
-- Ajoutez des vagues
-- Ajoutez un boss en fin de vagues
+- Ajoutez un système de vagues
+- Ajoutez un boss en fin de vague
 - Types d'armes variées
-- Upgrades d'armes
+- Système d'upgrades d'armes
 - Armes secondaires
 - Ennemis avec différents patterns d'attaque
 - Pièges et obstacles
