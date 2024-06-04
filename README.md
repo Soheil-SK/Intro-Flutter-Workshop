@@ -134,7 +134,7 @@ Par défaut Flutter n'initialise pas de système de route, vous allez donc le me
     2. Créez le dossier /router dans ./src
     3. Dans /router Créez un fichier router_g.dart
     4. Dans /router Créez un fichier router.dart
-### router.dart
+### router_g.dart
 ```dart
 part of 'router.dart';
 
@@ -177,7 +177,7 @@ extension $ProfileRouteExtension on ProfileRoute {
   void push(BuildContext context) => context.push(location, extra: this);
 }
 ```
-### router_g.dart
+### router.dart
 ```dart
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
