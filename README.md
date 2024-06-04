@@ -68,6 +68,10 @@ flutter:
     - assets/images/7.png
     - assets/images/laser.png
 ```
+## lib [Flame](https://docs.flame-engine.org/latest/index.html).
+La lib Flame est une bibliothèque spécialement conçue pour le développement de jeux en 2D en utilisant le langage de programmation Dart et le framework Flutter. Elle offre une gamme complète d'outils et de fonctionnalités qui simplifient la création de jeux.
+ https://docs.flame-engine.org/latest/ 
+Vous evidemment etes libre de choisir une autre lib.
 
 ```yml
 - ajoutez les dependences
@@ -77,7 +81,10 @@ dependencies:
   flame: ^1.18.0
   go_router: ^13.0.0
 ```
-
+### dl les dependences
+```console
+$ flutter pub get
+```
 
 ### main.dart
 ```dart
