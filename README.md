@@ -134,7 +134,7 @@ Par défaut Flutter n'initialise pas de système de route, vous allez donc le me
     2. Créez le dossier /router dans ./src
     3. Dans /router Créez un fichier router_g.dart
     4. Dans /router Créez un fichier router.dart
-### router_g.dart
+### router.dart
 ```dart
 part of 'router.dart';
 
@@ -410,8 +410,34 @@ class _ProfilePageState extends State<ProfilePage> {
 import 'package:flame/game.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
-import 'enemy.dart';
-import 'player.dart';
+
+import '../models/enemy.dart';
+import '../models/player.dart';
+
+
+class GamePage extends StatefulWidget {
+  const GamePage({super.key});
+
+  @override
+  State<GamePage> createState() => _GamePageState();
+}
+
+class _GamePageState extends State<GamePage> {
+  late _GalacticDefenderGame _game;
+
+  @override
+  void initState() {
+    super.initState();
+    _game = _GalacticDefenderGame();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: GameWidget(game: _game),
+    );
+  }
+}
 
 class GalacticDefenderGame extends FlameGame with TapCallbacks {
   late Player player;
@@ -439,6 +465,7 @@ class GalacticDefenderGame extends FlameGame with TapCallbacks {
     // A vous de jouer! :)
   }
 }
+
 ```
 
 
